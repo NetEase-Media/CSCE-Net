@@ -19,7 +19,7 @@ def get_config():
     
     parser = argparse.ArgumentParser(description='OrthoHash')
 
-    # loss related
+    # loss related params
     parser.add_argument('--scale', default=10, type=float, help='scale for cossim')
     parser.add_argument('--margin', default=0.15, type=float, help='ortho margin ')
     parser.add_argument('--margin-type', default='arc', choices=['cos', 'arc'], help='margin type')
